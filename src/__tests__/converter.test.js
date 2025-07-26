@@ -1,9 +1,10 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 
-import test from 'node:test'
-import assert from 'node:assert'
-import { fileExists } from '@hckrnews/converter'
-import Converter from '../converter.js'
+const test = require('node:test');
+const assert = require('node:assert');
+const { fileExists } = require('@hckrnews/converter');
+const Converter = require('../converter.js');
+
 
 test('PPT2PDF converter test', async (t) => {
   await t.test('It should generate the converter', () => {

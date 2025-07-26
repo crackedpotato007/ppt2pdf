@@ -1,7 +1,6 @@
-import path from 'node:path'
-import { platform } from 'node:process'
-import { Converter, getFileName } from '@hckrnews/converter'
-
+const { Converter, getFileName } = require( '@hckrnews/converter')
+const path = require("path")
+const {platform} = require("node:process")
 /**
  * @typedef {import('@hckrnews/converter').Converter} ConverterObject
  * @typedef {object} Ppt2PdfConverterSpecificObject
@@ -110,4 +109,4 @@ class Ppt2PdfConverter extends Converter {
   }
 }
 
-export default Ppt2PdfConverter
+module.exports = Ppt2PdfConverter
